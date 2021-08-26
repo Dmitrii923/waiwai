@@ -1,0 +1,554 @@
+
+/* ------------------------------------------------------------ */
+/* for all elements (cross browser) */
+
+body,div,p,h1,h2,h3,th,td,dt,dd,pre,
+ul,ol,li,form,fieldset,input,textarea,
+header,footer,article,section,nav,aside
+{
+	
+	margin :0;
+	padding:0;
+	
+}
+
+/* ------------------------------------------------------------ */
+/* for form elements (cross browser) */
+
+input
+{
+	
+	position:relative;
+	vertical-align:middle;
+	
+}
+
+input[type="radio"],input[type="checkbox"]{top:-2px;}
+
+input[type="submit"],input[type="button"],input[type="reset"]
+{
+	
+	cursor:pointer;
+	
+	font-size:90%;
+	line-height:100%;
+	
+	width:100px;
+	height:20px;
+	
+	
+	border:1px solid #aaaaaa;
+	border-radius:4px;
+	
+	background-color:#f3f3f3;
+	
+	background-image:-webkit-linear-gradient(#fcfcfc,#dcdcdc);
+	background-image:linear-gradient(#fcfcfc,#dcdcdc);
+	
+}
+
+input[type="submit"]:hover,input[type="button"]:hover,input[type="reset"]:hover
+{
+	
+	border:1px solid #999999;
+	
+	background-color:#eaeaea;
+	
+	background-image:-webkit-linear-gradient(#f6f6f6,#d6d6d6);
+	background-image:linear-gradient(#f6f6f6,#d6d6d6);
+	
+}
+
+input[type="text"]:focus
+{
+	
+	background-color:#f3f3f3;
+	
+}
+
+/* ------------------------------------------------------------ */
+/* for elements */
+
+html,body
+{
+	
+	background-color:#ffffff;
+	
+	-webkit-text-size-adjust:none;
+	
+}
+
+body,td,input,textarea,option,pre
+{
+	
+	color:#333333;
+	font:small/150% "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",sans-serif;
+	
+}
+
+table
+{
+	
+	table-layout:fixed;
+	border-collapse:collapse;
+	
+	margin:auto;
+	width:100%;
+	
+}
+
+.tr2{background-color:#f8f8f8;}
+
+legend{color:#666666;}
+
+em
+{
+	
+	font-style:normal;
+	font-weight:bold;
+	
+}
+
+ul{list-style-type:none;}
+
+a{text-decoration:none;}
+
+a:link   {color:#5555ff;}
+a:visited{color:#8a2be2;}
+a:hover  {color:#3333dd;text-decoration:underline;}
+
+/* ------------------------------------------------------------ */
+/* for header */
+
+header,footer
+{
+	
+	width:100%;
+	
+	color:#ffffff;
+	
+	font-family:"Lucida Sans Unicode";
+	
+}
+
+header
+{
+	
+	padding-top:0.4em;
+	
+}
+
+header h1
+{
+	
+	color:#ffffff;
+	
+	font-size:small;
+	font-weight:normal;
+	
+	padding-left:0.6em;
+	padding-bottom:0.25em;
+	
+}
+
+#main_title
+{
+	
+	font-size:130%;
+	font-weight:bold;
+	
+	color:#ffffff;
+	
+}
+
+#nav_menu
+{
+	
+	position:absolute;
+	
+	top:0.6em;
+	right:0;
+	
+	font-size:90%;
+	
+}
+
+#nav_menu a{margin:2px;}
+
+#sub_title
+{
+	
+	font-size:70%;
+	
+	margin-left:0.5em;
+	
+}
+
+header a{text-decoration:none;}
+header a:link   {color:#ffffff;}
+header a:visited{color:#ffffff;}
+header a:hover  {color:#dddddd;}
+
+/* ------------------------------------------------------------ */
+/* for sidebar */
+
+.square1
+{
+	
+	font-size:110%;
+	
+	color:#555555;
+	
+	text-shadow:3px 3px #888888;
+	
+	position:relative;
+	
+	top:-0.1em;
+	
+}
+
+.square2{display:none;}
+
+.h2
+{
+	
+	position:relative;
+	
+	left:0.1em;
+	
+}
+
+#sidebar ul{margin:5px 0 20px 20px;}
+
+/* ------------------------------------------------------------ */
+/* for main contents */
+
+#content_date,#content_filter,#content_all,#content_footer{position:relative;}
+
+#content_header
+{
+	
+	color:#444444;
+	border-bottom:1px solid #999999;
+	
+	font-size:100%;
+	font-weight:normal;
+	
+	margin-bottom:5px;
+	
+	padding-top:10px;
+	padding-left:2px;
+	
+}
+
+#content_mode,#none
+{
+	
+	display:none;
+	
+}
+
+#content_date
+{
+	
+	z-index:2;
+	
+	margin-top:-5px;
+	margin-bottom:8px;
+	
+	text-align:center;
+	
+	border-bottom:1px solid #aaaaaa;
+	
+}
+
+#content_filter
+{
+	
+	margin-top:-8px;
+	margin-bottom:8px;
+	
+	padding-right:5px;
+	
+	text-align:right;
+	
+	border-bottom:1px solid #dbdbdb;
+	
+	color:#999999;
+	
+}
+
+#content_main
+{
+	
+	margin-top:-8px;
+	padding:0;
+	
+}
+
+#content_all
+{
+	
+	z-index:4;
+	
+	text-align:center;
+	
+	margin-top   :10px;
+	margin-bottom:-15px;
+	
+}
+
+#content_footer
+{
+	
+	z-index:2;
+	
+	bottom:-5px;
+	
+	text-align:right;
+	padding-right:2px;
+	
+	color:#999999;
+	border-top:1px solid #aaaaaa;
+	
+}
+
+/* ------------------------------------------------------------ */
+/* for footer */
+
+footer
+{
+	
+	clear:both;
+	
+	text-align:right;
+	
+	font-size:85%;
+	
+}
+
+footer p
+{
+	
+	padding:0.2em 1em;
+	
+}
+
+/* ------------------------------------------------------------ */
+/* for advertisement */
+
+div[align="center"],center{display:none;}
+
+
+
+/* ------------------------------------------------------------ */
+/* for footer */
+
+#main_menu h1
+{
+	
+	color:#4444aa;
+	
+	font-size:90% !important;
+	
+	margin-top:2em;
+	
+	padding:0.3em;
+	padding-left:0.5em;
+	
+	border-top   :1px solid #9999ff;
+	border-bottom:1px solid #9999ff;
+	
+}
+
+#main_menu p
+{
+	
+	display:table;
+	
+	width:100%;
+	
+}
+
+#main_menu a
+{
+	
+	display:table-cell;
+	
+	width:50%;
+	border-bottom:1px solid #999999;
+	padding:0.6em 0.5em;
+	
+	background-image:url('../img/sp/sp_arrow.png');
+	background-repeat:no-repeat;
+	background-position:95% center;
+	
+}
+
+/* ------------------------------------------------------------ */
+/* for elements gradation */
+
+header,footer
+{
+	
+	background-color:#444444;
+	
+	/* for webkit */
+	background-image:-webkit-linear-gradient(#666666,#333333);
+	background:-webkit-gradient(linear,left top,left bottom,from(#888888),to(#444444));
+	
+}
+
+#main_menu h1
+{
+	
+	background-color:#eeeeff;
+	
+	/* for webkit */
+	background-image:-webkit-linear-gradient(#f6f6ff,#eaeaff);
+	background:-webkit-gradient(linear,left top,left bottom,from(#f6f6ff),to(#eaeaff));
+	
+}
+
+/* ------------------------------------------------------------ */
+
+.i_table .title{padding-left:2px !important;}
+
+#count_div{margin:20px 10px -5px;}
+
+.param .name{overflow:hidden;}
+
+.param #per{width:55px !important;}
+
+/* ------------------------------------------------------------ */
+
+.detail h3{padding-left:0px !important;}
+
+.d p
+{
+	
+	margin-left:10px !important;
+	
+	word-break:break-all;
+	word-wrap :break-word;
+	
+}
+
+/* ------------------------------------------------------------ */
+
+#referrer{margin-left:0 !important;}
+
+.graph .i_table
+{
+	
+	float:none !important;
+	width:100% !important;
+	
+	margin:25px 0 !important;
+	
+}
+
+.graph .i_table td a{padding:0 5px !important;}
+
+/* ------------------------------------------------------------ */
+
+#post{margin:20px 10px 0 !important;}
+
+#post #value{width:90% !important;}
+
+#post select
+{
+	
+	width:100% !important;
+	margin-bottom:10px !important;
+	
+}
+
+#submit_p
+{
+	
+	padding-left:0 !important;
+	
+	text-align:center;
+	
+}
+
+/* ------------------------------------------------------------ */
+
+.param_daily .name{overflow:hidden;}
+
+
+#count_div2
+{
+	
+	padding:10px 10px 12px;
+	
+	border-bottom:1px  solid #cccccc;
+	
+}
+
+#date_div
+{
+	
+	width:2.5em;
+	text-align:right;
+	
+}
+
+#data_div
+{
+	
+	width:90%;
+	float:right;
+	
+}
+
+#date_div p,.data_p{border-bottom:1px solid #cccccc;}
+
+.u_td,.p_td{text-align:right;}
+
+.p_td{padding-right:1em;}
+
+.img_td
+{
+	
+	text-align:left;
+	width:12em;
+	
+}
+
+.img_td img
+{
+	
+	border-bottom:1px solid #aaaaaa;
+	
+}
+
+/* ------------------------------------------------------------ */
+
+#pop
+{
+	
+	width:90% !important;
+	left:3% !important;
+	
+}
+
+#pop,#login_form
+{
+	
+	-webkit-box-shadow:3px 3px 4px rgba(0,0,0,0.4);
+	-moz-box-shadow:3px 3px 4px rgba(0,0,0,0.4);
+	
+}
+
+/* ------------------------------------------------------------ */
+
+#login_footer
+{
+	
+	position:absolute;
+	bottom:0;
+	
+}
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="robots" content="noindex,nofollow,noarchive" />
+		<link rel="stylesheet" type="text/css" href="$scr_dir/templates/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="$scr_dir/templates/css/$act.css" />
+		<script type="text/javascript" src="$scr_dir/templates/js/script.js"></script>
+		<title>Lunalys</title>
+	</head>
+	<body>
+		<header>
+			<h1>
+				<a href="http://act.st/api/jump.php/http://act.st/" class="out" id="main_title">Lunalys</a>
+				<span id="sub_title">- access analysis system -</span>
+			</h1>
+		</header>
+		<footer>
+			<p>Copyright (C) 2009-2012 Lunalys Project</p>
+		</footer>
+		<nav id="sidebar">
+			<h2>
+				<span class="square1">□</span>
+				<span class="square2">□</span>
+				<span class="h2">推移解析</span>
+			</h2>
+			<ul>
+				<li><a href="$scr_dir/">今日アクセス推移</a></li>
+				<li><a href="$scr_php/graph/daily/">日別アクセス推移</a></li>
+				<li><a href="$scr_php/graph/monthly/">月別アクセス推移</a></li>
+			</ul>
+			<h2>
+				<span class="square1">□</span>
+				<span class="square2">□</span>
+				<span class="h2">詳細解析</span>
+			</h2>
+			<ul>
+				<li><a href="$scr_php/detail/">詳細アクセスログ</a></li>
+				<li><a href="$scr_php/search/">詳細ログ条件検索</a></li>
+				<li><a href="$scr_php/param_daily/referrer/">日間パラメータ</a></li>
+				<li><a href="$scr_php/overlay/" class="out">オーバーレイ</a></li>
+			</ul>
+			<h2>
+				<span class="square1">□</span>
+				<span class="square2">□</span>
+				<span class="h2">来訪解析</span>
+			</h2>
+			<ul>
+				<li><a href="$scr_php/param/referrer/">リンク元（リファラ）</a></li>
+				<li><a href="$scr_php/param/click/">リンク先（クリック）</a></li>
+				<li><a href="$scr_php/param/page/">アクセスページ</a></li>
+				<li><a href="$scr_php/param/search_words/">検索キーワード</a></li>
+				<li><a href="$scr_php/param/visit/">訪問回数</a></li>
+			</ul>
+			<h2>
+				<span class="square1">□</span>
+				<span class="square2">□</span>
+				<span class="h2">環境解析</span>
+			</h2>
+			<ul>
+				<li><a href="$scr_php/param/os/">OS</a></li>
+				<li><a href="$scr_php/param/ua/">ブラウザ（UA）</a></li>
+				<li><a href="$scr_php/param/host_domain/">接続元ドメイン</a></li>
+				<li><a href="$scr_php/param/client_size/">ブラウザ表示領域</a></li>
+				<li><a href="$scr_php/param/display_size/">ディスプレイ解像度</a></li>
+			</ul>
+			<h2>
+				<span class="square1">□</span>
+				<span class="square2">□</span>
+				<span class="h2">解析設定</span>
+			</h2>
+			<ul>
+				<li><a href="$scr_php/log_data/">ログデータ管理</a></li>
+				<li><a href="$scr_php/page_data/page/">ページ情報管理</a></li>
+				<li><a href="$scr_php/version/">バージョン情報</a></li>
+				<li><a href="$scr_php/tracking_code/">解析用タグ情報</a></li>
+			</ul>
+		</nav>
+		<article id="content" class="$act">
+			<h2 id="content_header">
+				<span class="square1">□</span>
+				<span class="square2">□</span>
+				<span class="h2">$title</span>
+			</h2>$content_date

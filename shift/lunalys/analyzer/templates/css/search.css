@@ -1,0 +1,37 @@
+
+/* ------------------------------------------------------------ */
+/* for form elements*/
+
+#post td{padding:1px 0;}
+
+#post
+{
+	
+	margin-top :20px;
+	margin-left:22px;
+	
+}
+
+#post #name {width:140px;}
+#post #value{width:345px;}
+#post select{width:340px;}
+
+#submit_p
+{
+	
+	margin-top   :10px;
+	margin-bottom:10px;
+	
+	padding-left:190px;
+	
+}
+
+#param_name{width:100px;}
+
+select,option{color:#444444;}
+
+input{margin-right:3px;}
+
+.eq input{margin-left:10px;}
+
+/* ------------------------------------------------------------ */

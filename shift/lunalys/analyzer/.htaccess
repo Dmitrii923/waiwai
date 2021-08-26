@@ -1,0 +1,37 @@
+
+DirectoryIndex index.php
+
+<Files ~ "\.ini$">
+	Deny from all
+</Files>
+
+<IfModule mod_php5.c>
+	Options -Indexes
+	php_value variables_order GPCS
+	php_flag  magic_quotes_gpc Off
+	php_flag  register_argc_argv Off
+	php_flag  mbstring.encoding_translation Off
+	php_value mbstring.http_input pass
+	php_value mbstring.http_output pass
+	php_value mbstring.language Japanese
+	php_value mbstring.substitute_character none
+	php_value mbstring.internal_encoding UTF-8
+	php_value default_charset UTF-8
+</IfModule>
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*)$ index.php/$1
+	SetEnv MOD_REWRITE true
+</IfModule>
+
+<IfModule mod_deflate.c>
+	AcceptPathInfo on
+	AddOutputFilterByType DEFLATE text/html
+	AddOutputFilterByType DEFLATE text/css
+	AddOutputFilterByType DEFLATE text/javascript
+	AddOutputFilterByType DEFLATE application/x-javascript
+	AddOutputFilterByType DEFLATE application/x-httpd-php
+</IfModule>

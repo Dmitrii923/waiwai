@@ -1,0 +1,5 @@
+<?php
+echo <<<GOLGO
+<a href="recruit.php"><img src="img/left.jpg" onmouseover="this .src='img/left_mo.jpg'"onmouseout="this .src='img/left.jpg'" width="234" height="323" /></a><a href="cast.php"><img src="img/left1.jpg" onmouseover="this .src='img/left1_mo.jpg'"onmouseout="this .src='img/left1.jpg'" width="234" height="128" /></a><img src="img/left2.jpg" onmouseover="this .src='img/left2_mo.jpg'"onmouseout="this .src='img/left2.jpg'" width="234" height="127" /><a href="mail.php"><img src="img/left3.jpg" onmouseover="this .src='img/left3_mo.jpg'"onmouseout="this .src='img/left3.jpg'" width="234" height="124" /></a><a href="s/"><img src="img/left4.jpg" onmouseover="this .src='img/left4_mo.jpg'"onmouseout="this .src='img/left4.jpg'" width="234" height="128" /></a><a href="m/"><img src="img/left5.jpg" onmouseover="this .src='img/left5_mo.jpg'"onmouseout="this .src='img/left5.jpg'" width="234" height="124" /></a><a href="http://www.e-nomiya.com/" target="_blank"><img src="img/left6.jpg" onmouseover="this .src='img/left6_mo.jpg'"onmouseout="this .src='img/left6.jpg'" width="234" height="122" /></a>
+GOLGO;
+?>

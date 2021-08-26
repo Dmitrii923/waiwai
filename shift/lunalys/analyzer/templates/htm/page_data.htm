@@ -1,0 +1,35 @@
+			<nav id="content_mode">
+				<a href="$scr_php/page_data/$type/">通常</a> |
+				<a href="$scr_php/page_data/$type/csv/">CSV</a>
+			</nav>
+			<nav id="content_date">
+				<a $prev_link title="前の100件">&lt;</a>
+				$start_end
+				<a $next_link title="次の100件">&gt;</a>
+			</nav>$content_filter
+			<section id="content_main">
+				<form action="$scr_php/page_data/$type/" method="post" onSubmit="submitDisabled(0)" name="post" id="post">
+					<table>
+						<colgroup>
+							<col id="no"    />
+							<col id="title" />
+						</colgroup><!---->
+						<tr class="tr$tr">
+							<td class="right">
+								<input type="checkbox" name="nos[$no]" value="$no" id="hid$no" class="check" />$no
+							</td>
+							<td>
+								<input type="text" name="titles[$no]" value="$title" onChange="document.post.hid$no.checked='checked';" /><br>
+								<input type="text" name="urls[$no]"   value="$url"   onChange="document.post.hid$no.checked='checked';" />
+							</td>
+						</tr><!---->
+					</table>
+					<p id="submit_p">
+						<input type="submit" name="submit" id="submit" class="submit" value="変更" />
+					</p>
+				</form><!---->
+			<nav id="content_all">
+				<a $prev_link title="前の100件">&lt;</a>
+				<a href="$scr_php/page_data/$type/all/">全件表示</a>
+				<a $next_link title="次の100件">&gt;</a>
+			</nav>

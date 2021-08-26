@@ -1,0 +1,88 @@
+
+/* ------------------------------------------------------------ */
+/* for form elements */
+
+td
+{
+	
+	height:40px;
+	padding:3px 8px;
+	
+	border-bottom:1px solid #d5d5d5;
+	
+}
+
+table input
+{
+	
+	width:99%;
+	font-size:90%;
+	
+	color:#777777;
+	background-color:transparent;
+	
+	border:1px solid #cccccc;
+	padding:1px 5px;
+	
+}
+
+table input:focus{color:#333333;}
+
+#no{width:35px;}
+
+#submit_p
+{
+	
+	padding-top   :8px;
+	padding-bottom:8px;
+	
+	text-align:center;
+	border-bottom:1px solid #bbbbbb;
+	
+}
+
+.check{display:none;}
+
+.right{text-align:right !important;}
+
+td#sub_menu
+{
+	
+	padding:0;
+	
+	position:relative;
+	left:-36px;
+	
+}
+
+textarea
+{
+	
+	margin-top:18px;
+	margin-left:4px;
+	
+	width:642px;
+	height:460px;
+	
+	color:#666666;
+	
+}
+
+#csv_menu{margin-left:5px;}
+
+a.no_link{color:#666666;}
+
+.error_tr td{color:#ff0000;}
+
+/* ------------------------------------------------------------ */
+/* for footer */
+
+#content_footer
+{
+	
+	margin-top:-5px;
+	border-top:none;
+	
+}
+
+/* ------------------------------------------------------------ */

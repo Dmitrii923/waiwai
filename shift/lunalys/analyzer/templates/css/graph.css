@@ -1,0 +1,244 @@
+
+/* ------------------------------------------------------------ */
+/* for fieldset elements */
+
+fieldset
+{
+	
+	border:1px solid #bbbbbb;
+	margin:0 auto 5px;
+	
+}
+
+legend
+{
+	
+	margin-left:15px;
+	padding:5px;
+	
+}
+
+/* ------------------------------------------------------------ */
+/* for td elements */
+
+td{text-align:center;}
+
+td p{white-space:nowrap;}
+
+.g_tr td
+{
+	
+	height:205px;
+	vertical-align:bottom;
+	
+	padding-top:5px;
+	font-size:0.8em;
+	
+}
+
+.g_tr p{line-height:110%;}
+
+#h_n_tr td
+{
+	
+	color:#888888;
+	background-color:#fafafa;
+	
+	border-top :1px solid #bbbbbb;
+	border-left:1px solid #bbbbbb;
+	
+}
+
+#td0{border-left:none !important;}
+
+#h_n_tr p
+{
+	
+	line-height:100%;
+	
+	padding-top   :1px;
+	padding-bottom:1px;
+	
+}
+
+/* ------------------------------------------------------------ */
+/* for image graph */
+
+.u_img,.p_img
+{
+	
+	position:relative;
+	vertical-align:bottom;
+	
+	border-top  :1px solid #aaaaaa;
+	border-right:1px solid #aaaaaa;
+	
+}
+
+.u_img
+{
+	
+	z-index:3;
+	left:5px;
+	
+}
+
+.p_img
+{
+	
+	z-index:2;
+	right:2px;
+	
+}
+
+.u_cnt{color:#555555;}
+.p_cnt{color:#777777;}
+
+/* ------------------------------------------------------------ */
+/* for vector graph */
+
+.canvas
+{
+	
+	position:absolute;
+	z-index:3;
+	
+	top:117px;
+	
+}
+
+#h_table
+{
+	
+	position:relative;
+	z-index:4;
+	
+}
+
+.u_td_cnt,.p_td_cnt,.u_yd_cnt,.p_yd_cnt
+{
+	
+	font-size:80%;
+	position:absolute;
+	z-index:2;
+	
+}
+
+.u_td_cnt,.u_yd_cnt
+{
+	
+	margin-top:6px;
+	color:#555555;
+	
+}
+
+.p_td_cnt,.p_yd_cnt
+{
+	
+	margin-top:-17px;
+	color:#777777;
+	
+}
+
+/* ------------------------------------------------------------ */
+/* for timely graph */
+
+span.timely
+{
+	
+	display:block;
+	width:320px;
+	float:left;
+	
+}
+
+#timely a{margin:-2px;}
+
+/* ------------------------------------------------------------ */
+/* for daily graph */
+
+td.sun
+{
+	
+	color:red;
+	background-color:#ffe1e1 !important;
+	
+}
+
+td.sun a:link,td.sun a:visited{color:red;}
+
+td.sat
+{
+	
+	color:royalblue;
+	background-color:#e1fffd !important;
+	
+}
+
+#daily .u_td_cnt,#daily .p_td_cnt{font-size:70%;}
+
+/* ------------------------------------------------------------ */
+/* for vector graph */
+
+.graph .u_td_cnt,.graph .p_td_cnt
+{
+	
+	margin-left:-4px;
+	
+}
+
+/* ------------------------------------------------------------ */
+/* for shortcut action */
+
+#jump{margin-bottom:-11px;}
+
+#jump td
+{
+	
+	word-spacing:1px;
+	border-bottom:1px solid #cccccc;
+	
+}
+
+/* ------------------------------------------------------------ */
+/* for today param */
+
+#referrer{margin-left:26px;}
+
+.i_table
+{
+	
+	float:left;
+	width:312px;
+	
+	margin:10px 0;
+	
+}
+
+.i_table td
+{
+	
+	text-align:left;
+	border-bottom:1px solid #dbdbdb;
+	padding:1px 0;
+	
+}
+
+.tr0 td{border-bottom:1px solid #aaaaaa !important;}
+
+#cnt{width:40px;}
+
+.name{padding-left:5px !important;}
+
+.cnt
+{
+	
+	padding-right:2px !important;
+	text-align:right !important;
+	
+}
+
+
+#content_footer{clear:left;}
+
+/* ------------------------------------------------------------ */

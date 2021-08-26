@@ -1,0 +1,14 @@
+			<nav id="content_mode">
+				<a href="$scr_php/page_data/$type/">通常</a> |
+				<a href="$scr_php/page_data/$type/csv/">CSV</a>
+			</nav>
+			<nav id="content_date">
+				&lt; $start_end &gt;
+			</nav>$content_filter
+			<section id="content_main">
+				<form action="$scr_php/page_data/$type/csv/" method="post" onSubmit="submitDisabled(0)" name="post" id="post">
+					<textarea name="csv_d">$csv_d</textarea>
+					<p id="submit_p">
+						<input type="submit" name="submit" id="submit" class="submit" value="変更" />
+					</p>
+				</form>

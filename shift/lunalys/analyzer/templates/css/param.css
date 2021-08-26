@@ -1,0 +1,43 @@
+
+/* ------------------------------------------------------------ */
+/* for main contents */
+
+#content_footer
+{
+	
+	top:0;
+	border-top:none;
+	
+}
+
+td
+{
+	
+	text-align:right;
+	
+	padding-top   :1px;
+	padding-bottom:1px;
+	
+	border-bottom:1px solid #dbdbdb;
+	white-space:nowrap;
+	
+}
+
+.name{text-align:left;}
+
+#lm_img{width:23px;}
+#lm_i  {width:42px;}
+#i     {width:40px;}
+
+#cnt   {width:60px;}
+#per   {width:65px;}
+#lm_per{width:65px;}
+
+img{vertical-align:middle;}
+
+.up  {color:#ff7979;}
+.even{color:#c757ef;}
+.down{color:#7979ff;}
+.new {color:#50bf50;}
+
+/* ------------------------------------------------------------ */

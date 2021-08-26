@@ -1,0 +1,18 @@
+
+/* ------------------------------------------------------------ */
+/* for list elements */
+
+#content ol{padding:15px 0 5px 30px;}
+
+#content_main hr
+{
+	
+	border:none;
+	border-bottom:1px dashed #888888;
+	
+	margin:4px;
+	margin-bottom:-8px;
+	
+}
+
+/* ------------------------------------------------------------ */

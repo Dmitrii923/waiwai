@@ -1,0 +1,15 @@
+
+/* ------------------------------------------------------------ */
+/* for list elements */
+
+#content_main ul{margin:20px 24px -5px;}
+
+#content_main li
+{
+	
+	list-style-type:circle;
+	padding-bottom:10px;
+	
+}
+
+/* ------------------------------------------------------------ */

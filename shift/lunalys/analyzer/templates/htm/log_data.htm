@@ -1,0 +1,25 @@
+				<h3 id="h3_1">累計カウンターの修正</h3>
+				<form action="$scr_php/log_data/cnt_rw/" method="post" onSubmit="submitDisabled(0);">
+					<p class="submit_p">
+						ユニーク &nbsp;<input type="text" name="u_t" value="$u_t" id="u_t" /> &nbsp;&nbsp;
+						PV &nbsp;<input type="text" name="p_t" value="$p_t" id="p_t" /> &nbsp; &nbsp;
+						<input type="submit" name="submit" class="submit" value="修正" />
+					</p>
+				</form>
+				<h3 class="h3_2">ログテーブルのコンバート</h3>
+				<form action="$scr_php/log_data/convert/" method="post" onSubmit="submitDisabled(1);">$convert
+					<p class="submit_p">
+						ver 2.0 形式 ⇒ ver 2.1 形式にログを変換します。  &nbsp; &nbsp;
+						<input type="submit" name="submit" class="submit" value="変換" />
+					</p>
+				</form>
+				<h3 class="h3_3">ログテーブルのダウンロード（.csvエクスポート）</h3><!---->
+				<p class="table_p">
+					<a href="$scr_php/download/{$prefix}_total/" title="ダウンロード">{$prefix}_total</a>　　　　　
+					<a href="$scr_php/download/{$prefix}_page/" title="ダウンロード">{$prefix}_page</a>　　　　　
+					<a href="$scr_php/download/{$prefix}_referrer/" title="ダウンロード">{$prefix}_referrer</a>　　　
+					<a href="$scr_php/download/{$prefix}_click/" title="ダウンロード">{$prefix}_click</a>
+				</p><!---->
+				<p class="table_p"><!---->
+					<a href="$scr_php/download/$table/" title="ダウンロード">$table</a>　　<!---->
+				</p>

@@ -1,0 +1,28 @@
+				<form action="$scr_php/sp/detail_search/" method="post" name="post" id="post">
+					<table>
+						<colgroup>
+							<col id="name" />
+							<col id="value" />
+						</colgroup><!---->
+						<tr>
+							<td>$name</td>
+							<td class="eq">
+								<label for="$n_eq"><input type="radio" name="$n_eq" id="$n_eq" value="eq" checked="checked" />含む</label>
+								<label for="$n_ne"><input type="radio" name="$n_eq" id="$n_ne" value="ne" />除く</label>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<select name="$n">$option
+								</select>
+							</td>
+						</tr><!---->
+					</table>
+					<p id="submit_p">
+						<input type="reset"  class="submit" value="リセット" />　　
+						<input type="submit" class="submit" value="検索" />
+						<input type="hidden" name="mode" value="search_detail" />
+						<input type="hidden" name="y" value="$y" />
+						<input type="hidden" name="m" value="$m" />
+					</p>
+				</form>

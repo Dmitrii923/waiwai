@@ -1,0 +1,251 @@
+/* CSS Document */
+
+body
+{
+font-size:12px;
+line-height:22px;
+background-color:#000000;
+text-align:left;
+font-family:"ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+}
+p {margin:10px;}
+div {margin:0; padding:0;}
+img {border:0;}
+hr {width:90%;}
+
+/* 汎用クラス */
+.clear {clear:both;}
+.text_red {color:#FF0000}
+
+/* リンク色 */
+a:link,a:visited,a:hover,a:active{color:#FF0033; outline:none;}
+a:link,a:visited {text-decoration:none;}
+a:hover,a:active {text-decoration:underline;}
+
+/* プロフィール全体の枠 */
+div#contents
+{
+width:646px;
+background:#FFFFFF url(../../img/prof_mainph_back.jpg) no-repeat left top;
+}
+
+/* プロフィール左側　写真の枠 */
+div#box_left
+{
+width:318px;
+height:530px;
+float:left;
+position:relative;
+}
+	/*メイン写真の枠*/
+	#main_ph , img.list_kazari2
+	{
+	width:300px;
+	height:450px;
+	position:absolute;
+	top:10px;
+	left:10px;
+	}
+	
+	/* サムネイルのテーブル */
+	table.thumb
+	{
+	width:300px;
+	border-collapse:collapse;
+	position:absolute;
+	top:470px;
+	left:7px;
+	}
+
+
+/* プロフィール右側の枠 */
+div#box_right
+{
+width:318px;
+float:right;
+}
+	/* テキスト情報 */
+	.prof_name
+	{
+	font-size:12px;
+	font-weight:bold;
+	border-left:3px #CCCCCC solid;
+	text-indent:5px;
+	}
+		.prof_name span {font-size:14px;}
+		
+/* オプション表示領域 */
+div#box_option
+{
+width:299px;
+height:106px;
+padding-top:14px;
+padding-right:14px;
+text-align:right;
+background-image:url(../../img/op_back.jpg);
+background-repeat:no-repeat;
+margin:5px auto;
+}
+	#box_option img {margin:1px;}
+
+p.btn_cast {text-align:right;}
+
+/* パラメーター設定 */
+div#box_param
+{
+width:172px;
+margin:10px auto;
+}
+	#box_param table
+	{
+	border-collapse:collapse;
+	border:0;
+	width:100%;
+	}
+
+/* キャストリスト スケジュール　掲示板 */
+div#box_castlist,
+div#box_schedule,
+div#box_osusumeinfo
+{
+width:624px;
+margin:0 auto;
+}
+div#box_osusumeinfo
+{
+background-color:#000000;
+color:#FFFFFF;
+}
+	#box_castlist div
+	{
+	width:156px;
+	text-align:center;
+	vertical-align:middle;
+	float:left;
+	background:url(../../img/castlist_cast_back.gif) repeat-y;
+	margin-bottom:1px;
+	position:relative;
+	}
+		img.list_kazari
+		{
+		position:absolute;
+		top:0;
+		left:0;
+		}
+	#box_castlist p
+	{
+	margin:3px 10px;
+	line-height:18px;
+	}
+	#box_castlist span
+	{
+	color:#FF6666;
+	font-weight:bold;
+	}
+	/* 以下のテーブル設定は#box_top_scheduleにもあり */
+	#box_castlist table
+	{
+	border-collapse:collapse;
+	width:142px;
+	margin:5px auto;
+	}
+		#box_castlist td
+		{
+		width:71px;
+		}
+p.sche_date
+{
+margin:0;
+font-size:14px;
+font-weight:bold;
+color:#FF6666;
+}
+p.sche_page
+{
+margin:5px;
+font-size:10px;
+}
+
+/* トップページ出勤枠 */
+div#box_top_schedule
+{
+width:624px;
+margin:0 auto;
+padding-top:10px;
+background-color:#000000;
+color:#FFFFFF;
+}
+	#box_top_schedule div
+	{
+	width:156px;
+	text-align:center;
+	vertical-align:middle;
+	float:left;
+	margin-bottom:1px;
+	position:relative;
+	}
+		img.list_kazari
+		{
+		position:absolute;
+		top:0;
+		left:0;
+		}
+	#box_top_schedule p
+	{
+	margin:3px 10px;
+	line-height:18px;
+	}
+	#box_top_schedule span
+	{
+	color:#FF6666;
+	font-weight:bold;
+	}
+	#box_top_schedule table
+	{
+	border-collapse:collapse;
+	width:142px;
+	margin:5px auto;
+	}
+		#box_top_schedule td
+		{
+		width:71px;
+		}
+
+/* 掲示板設定 五つ星ガール */
+div#osusume_info,
+div#fivestargirl
+{
+width:306px;
+height:263px;
+background-color:#000000;
+color:#FFFFFF;
+text-align:left;
+overflow:auto;
+}
+div#fivestargirl
+{
+position:relative;
+overflow:hidden;
+}
+	#fivestargirl div
+	{
+	float:left;
+	margin:25px 20px 20px 20px;
+	}
+	#fivestargirl span
+	{
+	font-size:18px;
+	font-weight:bold;
+	}
+	#fivestargirl p
+	{
+	margin:30px 10px 20px 20px;
+	font-weight:bold;
+	line-height:18px;
+	}
+	img.pickup_kazari
+	{
+	position:absolute;
+	top:0;
+	left:0;
+	}

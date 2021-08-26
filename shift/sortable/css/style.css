@@ -1,0 +1,26 @@
+/* CSS Document */
+
+ul#order_list {
+	list-style-type: none; 
+	cursor: hand; 
+	cursor: pointer;
+	}
+	
+ul#order_list li {
+	border: 1px solid black; 
+	width: 19%;
+	margin-top:5px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom:60px;
+	float:left;
+	text-align:center;
+	padding:5px;
+	}
+ul#order_list li th {
+	border:0px;
+	width:50%;
+	}
+ul#order_list li form{
+	text-align:center;
+	}

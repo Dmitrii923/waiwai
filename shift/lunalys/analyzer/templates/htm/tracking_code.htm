@@ -1,0 +1,73 @@
+				<div>
+					<h2>HTMLページ用</h2>
+					<h3>1.解析するページのHTMLタグ設定</h3>
+					<p>
+						&lt;body&gt; の直後に下記のコードを記述して下さい。全ページ共通です。<br />
+						&lt;body&gt; の直後でなくても動作しますが、下に記述するほど精度が下がります。
+					</p>
+					<p class="code">&lt;div id="tracker" style="position:absolute;visibility:hidden;"&gt;<br />&lt;script type="text/javascript" src="$url_dir/tracker.js"&gt;&lt;/script&gt;<br />&lt;noscript&gt;&lt;img src="$url_dir/write.php?guid=ON&act=img" width="0" height="0" alt="tracker"&gt;&lt;/noscript&gt;<br />&lt;/div&gt;</p>
+					<h3>2.より正確に解析するHTMLタグ設定（任意）</h3>
+					<p>
+						上記のコードの代わりに下記のコードを記述して下さい。各ページのURLが必要です。<br />
+						JavaScriptが実行出来ない環境でもアクセスページを取得可能になります。
+					</p>
+					<p class="code">&lt;div id="tracker" style="position:absolute;visibility:hidden;"&gt;<br />&lt;script type="text/javascript" src="$url_dir/tracker.js"&gt;&lt;/script&gt;<br />&lt;noscript&gt;&lt;img src="$url_dir/write.php?guid=ON&act=img<span class="red">&url=そのページのURL</span>" width="0" height="0" alt="tracker"&gt;&lt;/noscript&gt;<br />&lt;/div&gt;</p>
+				</div>
+				<div class="php_page">
+					<h2>PHPページ用</h2>
+					<h3>1.解析するページのPHPコード設定</h3>
+					<p>
+						PHPソースコードの全てのHTML出力の後に下記のコードを記述して下さい。<br />
+						動作しない場合は全ての処理の前に記述して下さい。
+					</p>
+					<p class="code">&lt;?php<br />include('$tracker_php');<br />?&gt;</p>
+					<p>
+						※上記で動作しない場合は下記に変更して記述して下さい
+					</p>
+					<p class="code">&lt;?php<br />include('$write_php');<br />?&gt;</p>
+					<h3>2.より詳細に解析するHTMLタグ設定（任意）</h3>
+					<p>
+						上記のコードに加えて &lt;/body&gt; の直前に下記のコードを記述して下さい。<br />
+						「リンク先」「訪問回数」「解像度」「表示領域」が取得可能になります。
+					</p>
+					<p class="code">&lt;script type="text/javascript" src="$url_dir/add.js"&gt;&lt;/script&gt;</p>
+				</div>
+				<div class="rss_feed">
+					<h2>RSSフィード用</h2>
+					<h3>1.解析するRSSフィードのXMLタグ設定（RSS2.0）</h3>
+					<p>
+						&lt;/channel&gt; の直前に下記のコードを記述して下さい。
+					</p>
+					<p class="code">&lt;item&gt;<br />&lt;description&gt;<br />&amp;lt;img src="$url_dir/write.php?act=img&amp;amp;url=RSSフィードのURL" width="0" height="0" alt="tracker" /&amp;gt;<br />&lt;/description&gt;<br />&lt;/item&gt;</p>
+				</div>
+				<div class="all_page">
+					<h2>全ページ共通</h2>
+					<h3>1.テキストカウンターを表示するHTMLタグ設定（任意）</h3>
+					<p>
+						HTMLソースコードの表示させたい部分に下記のコードを記述して下さい。<br />
+						「uu」「today」の部分は用途に応じて下記の文字列に変更可能です。
+					</p>
+					<p class="code">&lt;script type="text/javascript" src="$url_dir/index.php/counter/uu/today/"&gt;&lt;/script&gt;</p>
+					<p>
+						ユニークユーザー数：uu　　ページビュー数：pv
+					</p>
+					<p>
+						累計カウント：total　　昨日カウント：yesterday　　今日カウント：today
+					</p>
+					<br />
+					<h3>2.パラメータ統計を表示するHTMLタグ設定（任意）</h3>
+					<p>
+						HTMLソースコードの表示させたい部分に下記のコードを記述して下さい。<br />
+						「page」の部分は用途に応じて下記の文字列に変更可能です。<br />
+						「年/月/表示件数/」を省略すると現在の年月のデータが表示されます。
+					</p>
+					<p class="code">&lt;script type="text/javascript" src="$url_dir/index.php/clip/page/$y/$m/10/" charset="UTF-8"&gt;&lt;/script&gt;</p>
+					<p>
+						書式：/clip/パラメータ名/年/月/表示件数/
+					</p>
+					<p>
+						ページ：page　　リンク元：referrer　　接続元ドメイン：host_domain<br />
+						検索語（単語）：search_word　　検索語（フレーズ）：search_words<br />
+						ブラウザ：ua　 携帯：mobile　 OS：os　 解像度：display_size　 表示領域：client_size
+					</p>
+				</div>

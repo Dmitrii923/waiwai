@@ -1,0 +1,113 @@
+				<canvas id="canvas" class="canvas" width="648" height="265"></canvas>
+				<script type="text/javascript">
+					
+					// 描画準備
+					var canvas = document.getElementById('canvas');
+					var v = canvas.getContext('2d');
+					
+					// 色、パーセンテージ、項目名を定義
+					var colors = ["60,60,255","175,0,255","255,50,50","100,185,50","125,125,255","200,100,255","255,150,150","255,100,0","255,200,0","0,150,0"];
+					var pers   = [$pers];
+					var items  = [$items];
+					
+					// 座標関連の変数を初期化
+					var pi  = Math.PI / 180;
+					var ra  = 270;
+					var px  = 120
+					var x   = px;
+					var y   = px;
+					var r   = px;
+					var sr  = 0;
+					var er  = 0;
+					var sa  = '';
+					var ea  = '';
+					var acw = false;
+					
+					// 現在の座標を取得
+					var cx = canvas.offsetLeft;
+					var cy = canvas.offsetTop;
+					
+					// パラメータを取得するループ
+					for (i in pers) 
+					{
+						
+						// 座標関連を算出
+						er = sr + pers[i] * 3.6;
+						sa = (sr + ra) * pi;
+						ea = (er + ra) * pi;
+						lx = x + y * Math.cos(sa);
+						ly = x + y * Math.sin(sa);
+						
+						// 区切り線を描画
+						v.beginPath();
+						v.moveTo(x,y);
+						v.lineTo(lx,ly);
+						v.strokeStyle = 'rgb(255,255,255)';
+						v.stroke();
+						v.closePath();
+						
+						// 円弧の塗りつぶしを定義
+						var rgb = v.createRadialGradient(x,y,0,x,y,r);
+						rgb.addColorStop(0,   "rgba(" + colors[i] + ",1)");
+						rgb.addColorStop(0.7, "rgba(" + colors[i] + ",0.85)");
+						rgb.addColorStop(1,   "rgba(" + colors[i] + ",0.75)");
+						
+						// 円弧を描画
+						v.beginPath();
+						v.moveTo(x,y);
+						v.arc(x,y,r,sa,ea,acw);
+						v.fillStyle = rgb;
+						v.fill();
+						v.closePath();
+						
+						// パラメータを取得
+						var cap = items[i];
+						var p   = pers[i];
+						
+						// 変数を初期化
+						var n = 0;
+						var drate;
+						
+						     if(r <= 0.03){drate = 1.1;}
+						else if(r <= 0.05){drate = 0.9;}
+						else if(r <= 0.1) {drate = 0.8;}
+						else if(r <= 0.15){drate = 0.7;}
+						else {drate = 0.6;}
+						
+						var cp = 
+						{
+							x: cx + x + (r * drate) * Math.cos((sa + ea) / 2),
+							y: cy + y + (r * drate) * Math.sin((sa + ea) / 2)
+						};
+						
+						// 項目名を表示するdivを追加
+						var div = document.createElement('div');
+						
+						// divにパーセンテージを追加
+						div.appendChild(document.createTextNode(cap));
+						div.appendChild(document.createElement('br'));
+						div.appendChild(document.createTextNode(p + "%"));
+						
+						// フォント設定
+						div.style.position   = 'absolute';
+						div.style.textAlign  = 'center';
+						div.style.color      = 'white';
+						div.style.lineHeight = '120%';
+						/*
+						div.style.fontSize   = '18px';
+						div.style.fontFamily = "'メイリオ','Meiryo','ＭＳ Ｐゴシック'";
+						*/
+						
+						// 7%より大きい時は項目名を描画
+						if(p > 7){this.canvas.parentNode.appendChild(div);}
+						
+						// divの位置を設定
+						div.style.top  = (cp.y - div.offsetHeight / 2).toString() + "px";
+						div.style.left = (cp.x - div.offsetWidth  / 2).toString() + "px";
+						
+						// 座標関連を算出
+						sr += pers[i] * 3.6;
+						
+					}
+					
+				</script>

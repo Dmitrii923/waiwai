@@ -1,0 +1,382 @@
+/* CSS Document */
+
+* {margin:0; padding:0;}
+
+body
+{
+	font-size:14px;
+	color:#333333;
+	font-family:"メイリオ";
+	line-height:18px;
+}
+input,textarea {font-family:"メイリオ"}
+a:link,
+a:visited,
+a:hover,
+a:active {color:#0099FF;}
+
+a:link,
+a:visited {text-decoration:none;}
+a:hover,
+a:active {text-decoration:underline;}
+
+h1 {background:#000000;}
+p,h1,h2,h3 {margin:5px;}
+img {border:0; margin:1px;}
+
+h1,p.midashi1
+{
+	color:#FFF;
+	text-align:center;
+	padding:5px;
+}
+h1,h2,h3 {
+	font-size:18px;
+}
+h2,h3 {
+	color:#F00;
+}
+
+.aln_center {text-align:center;}
+.flo_l {float:left;}
+.copyright
+{
+font-weight:bold;
+font-family:Arial, Helvetica, sans-serif;
+text-align:center;
+}
+
+div#container
+{
+	width:1020px;
+	margin:10px auto 10px auto;
+	text-align:center;
+	background-color:#FFFFFF;
+}
+div#container th {
+	border:solid 1px #ccc;
+	padding:5px;
+}
+div#container td {
+	border:solid 1px #ccc;
+	padding:5px;
+}
+div#container2 {
+	width:100%;
+	text-align:center;
+	background-color:#FFFFFF;
+}
+div#container th2 {
+	border:solid 1px #ccc;
+	padding:5px;
+}
+div#container td2 {
+	border:solid 1px #ccc;
+	padding:5px;
+}
+div#menu
+{
+border:#CCCCCC 1px solid;
+text-align:center;
+margin:10px 5px;
+}
+
+/* 色々設定 */
+.bg1 {background-color:#FFFFCC}
+.bg2 {background-color:#EEEEEE}
+.bg3 {background-color:#CCFFFF}
+.border1 {border:#333333 1px solid; width:100%;}
+.valign_top {vertical-align:top}
+.valign_middle {vertical-align:middle}
+.align_right {text-align:right}
+.align_center {text-align:center}
+.align_left {text-align:left}
+.col_red {color:red}
+.txt_bold {font-weight:bold;}
+.mgnLeft20 {margin-left:20px;}
+
+/* フォーム設定 */
+form {
+	border: 0;
+}
+input,textarea,select {
+	border: #999999 1px solid;
+	padding: 1px;
+}
+.w_px100 {
+	display:block;
+	width:300px;
+	height:67px;
+	color:#000;
+	font-size:24px;
+	background-image:url(../img/sub.jpg);
+	background-attachment:scroll;
+	margin:auto;
+	border:0;
+	padding:0;
+}
+.w_px60 {
+	display:block;
+	width:200px;
+	height:35px;
+	color:#000;
+	font-size:16px;
+	background-image:url(../img/button_bg3.jpg);
+	background-attachment:scroll;
+	margin:auto;
+	border:0;
+	padding:0;
+}
+.w_px90 {
+	width:200px;
+	height:40px;
+}
+.w_px80 {
+	width:100%;
+}
+.w_px70 {
+	width:100%;
+	height:200px;
+}
+.w_px50 {
+	width:100%;
+	height:100px;
+}
+#leftarea {
+	width: 320px;
+	float: left;
+	border-radius: 5px;         /* CSS3 */
+	-moz-border-radius: 5px;    /* Firefox */
+	-webkit-border-radius: 5px; /* Safari,Chrome */
+	border: 1px #999 solid;   /* 背景色 */
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+ul#navi {
+	width: 300px;
+	list-style:none;
+	margin:auto;
+}
+ul#navi li{
+	width: 100%;
+	margin-top:5px;
+	margin-bottom:5px;
+	text-align:left;
+	height:67px;
+}
+ul#navi li a {
+	display:block;
+	color:#000;
+	line-height:67px;
+	background-image:url(../img/button_bg.jpg);
+	padding-left:15px;
+}
+ul#navi li a:hover {
+	display:block;
+	color:#FFF;
+	line-height:67px;
+	background-image:url(../img/button_bg2.jpg);
+	text-decoration:none;
+	padding-left:15px;
+}
+ul#menu {
+	list-style:none;
+	font-size:14px;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+ul#menu li{
+	float: left;
+	width:200px;
+	height:35px;
+	margin-top: 5px;
+	text-align:left;
+}
+ul#menu li a {
+	display:block;
+	color:#000;
+	line-height:35px;
+	background-image:url(../img/button_bg3.jpg);
+	padding-left:15px;
+}
+ul#menu li a:hover {
+	display:block;
+	color:#fff;
+	line-height:35px;
+	background-image:url(../img/button_bg4.jpg);
+	text-decoration:none;
+	padding-left:15px;
+}
+#rightarea {
+	width: 690px;
+	float: right;
+	margin-bottom: 15px;
+}
+#hp_view {
+	border-radius: 5px;         /* CSS3 */
+	-moz-border-radius: 5px;    /* Firefox */
+	-webkit-border-radius: 5px;
+	border: 1px #999 solid;     /* 枠線の装飾 */
+	background-color: #fff;   /* 背景色 */
+	margin-top:15px;
+}
+#pv_view {
+	border-radius: 5px;         /* CSS3 */
+   -moz-border-radius: 5px;    /* Firefox */
+   -webkit-border-radius: 5px; /* Safari,Chrome */
+   border: 1px #333 solid;     /* 枠線の装飾 */
+   background-color: #fff;   /* 背景色 */
+   margin-top:15px;
+}
+#dtp_view {
+	border-radius: 5px;         /* CSS3 */
+   -moz-border-radius: 5px;    /* Firefox */
+   -webkit-border-radius: 5px; /* Safari,Chrome */
+   border: 1px #333 solid;     /* 枠線の装飾 */
+   background-color: #fff;   /* 背景色 */
+   margin-top:15px;
+}
+#footer {
+	clear: both;
+	border-radius: 5px;         /* CSS3 */
+	-moz-border-radius: 5px;    /* Firefox */
+	-webkit-border-radius: 5px; /* Safari,Chrome */
+	padding: 10px;
+	border: 1px #333 solid;     /* 枠線の装飾 */
+	background-color: #fff;
+	margin-top: 15px;
+}
+#footer p a {
+	color:#666;
+}
+#footer a {
+	color:#666;
+}
+div#top_sche {
+	font-family: "メイリオ";
+	margin-left: 5px;
+	font-size: small;
+	margin-right: 5px;
+}
+div#top_sche td {
+	border:0;
+	padding:0;
+}
+div#sche {
+	top: 0px;
+	width:176px;
+	margin-bottom: 50px;
+	float:left;
+	font-size: small;
+	margin-left:38px;
+}
+
+#pickup {
+	width: 95%;
+	margin: auto;
+	border: solid 1px #ccc;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+#pickup a {
+	background-color: #000;
+	color: #CCC;
+	font-size: 12px;
+	line-height:25px;
+	width:95%;
+	display:block;
+	margin:auto;
+}
+#pick1 {
+	width: 98%;
+	float: none;
+	margin-top: 10px;
+	margin: auto;
+}
+
+#pick2 {
+	float: right;
+	width: 49%;
+	margin-top: 10px;
+}
+#top_news {
+	width: 88%;
+	border: solid 1px #ccc;
+	padding: 10px;
+	margin: auto;
+	height: 480px;
+	overflow: auto;
+}
+#top_news2 {
+	width: 260px;
+	text-align: left;
+	margin: auto;
+}
+#under_line { clear: both; }
+
+#news_disp { text-align: left; }
+.font_big {
+	font-size: 24px;
+}
+ul#aj {
+	list-style:none;
+}
+ul#aj li {
+	width:200px;
+}
+ul#aj li a {
+	display:block;
+	color:#000;
+	line-height:35px;
+	background-image:url(../img/button_bg3.jpg);
+	padding-left:15px;
+}
+ul#aj li a:hover {
+	display:block;
+	color:#fff;
+	line-height:35px;
+	background-image:url(../img/button_bg4.jpg);
+	text-decoration:none;
+	padding-left:15px;
+}
+#sche_kanritop table td {
+	border:0;
+}
+#syukkin {
+	background-color: #e7ffff;
+	color: #00F;
+}
+#yasumi {
+	background-color: #FCF;
+	color: #F00;
+}
+ul#eve {
+	list-style:none;
+	width: 440px;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+ul#eve li {
+	width:200px;
+	float:left;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+}
+ul#eve li a {
+	display:block;
+	color:#000;
+	line-height:35px;
+	background-image:url(../img/button_bg3.jpg);
+	padding-left:15px;
+}
+ul#eve li a:hover {
+	display:block;
+	color:#fff;
+	line-height:35px;
+	background-image:url(../img/button_bg4.jpg);
+	text-decoration:none;
+	padding-left:15px;
+}

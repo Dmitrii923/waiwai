@@ -1,0 +1,60 @@
+
+/* ------------------------------------------------------------ */
+/* for main contents */
+
+#content_main{padding-top:15px;}
+
+#content_footer{margin-top:5px;}
+
+#content_main h3
+{
+	
+	font-size:100%;
+	font-weight:bold;
+	
+	padding-left:25px;
+	width:96%;
+	
+}
+
+#u_t,#p_t
+{
+	
+	width:100px;
+	padding-left:3px;
+	
+	color:#777777;
+	border:1px solid #aaaaaa;
+	
+	ime-mode:disabled;
+	
+}
+
+#total{font-size:90%;}
+
+.submit_p{margin:10px 0 15px 38px;}
+
+.convert
+{
+	
+	margin-left:36px;
+	color:#ff0000;
+	
+}
+
+.h3_2,.h3_3
+{
+	
+	margin-top   :10px;
+	margin-bottom: 8px;
+	padding-top:10px;
+	
+	border-top:1px dashed #808080;
+	
+}
+
+.table_p{margin-left:38px;}
+
+#u_t:focus,#p_t:focus{color:#333333;}
+
+/* ------------------------------------------------------------ */
